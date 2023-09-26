@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario KEVIN</title>
+    <link rel="stylesheet" href="KEVIN.css">
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label for="nombre">Nombre<span class="campo-requerido"></span>:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" maxlength="50" required>
+            <label for="apellido">Apellido<span class="campo-requerido"></span>:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" maxlength="50" required>
+            <label for="apodo">Apodo<span class="campo-requerido"></span>:</label>
+            <input type="text" id="apodo" name="apodo" placeholder="Apodo" maxlength="50" required>
+            <label for="edad">Edad<span class="campo-requerido"></span>:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required>
+            <label for="email">Email<span class="campo-requerido"></span>:</label>
+            <input type="email" id="email" name="email" placeholder="info@gmail.com" required>
+            <label for="nacionalidad">Nacionalidad<span class="campo-requerido"></span>:</label>
+            <select id="nacionalidad" name="nacionalidad" required>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasilera">Brasilera</option>
+                <option value="Chilena">Chilena</option>
+                <option value="Uruguaya">Uruguaya</option>
+                <option value="Paraguaya">Paraguaya</option>
+                <option value="Peruana">Peruana</option>
+                <option value="Colombiana">Colombiana</option>
+                <option value="Venezolana">Venezolana</option>
+                <option value="Mexicana">Mexicana</option>
+                <option value="Estadounidense">Estadounidense</option>
+            </select>
+            <label for="genero">Género<span class="campo-requerido"></span>:</label>
+            <fieldset id="genero">
+                <label><input type="radio" name="genero" value="Femenino" required>Femenino</label>
+                <label><input type="radio" name="genero" value="Masculino" required>Masculino</label>
+                <label><input type="radio" name="genero" value="Otro" required>Otro</label>
+            </fieldset>
+            <label for="numero_documento">Número de Documento<span class="campo-requerido"></span>:</label>
+            <input type="text" id="numero_documento" name="numero_documento" placeholder="Número de Documento" maxlength="20" required>
+            <label for="telefono">Teléfono<span class="campo-requerido"></span>:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+            <label for="bebida">Bebida Preferida:</label>
+            <fieldset id="bebida">
+                <label><input type="checkbox" name="bebida" value="Cerveza">Cerveza</label>
+                <label><input type="checkbox" name="bebida" value="Vino">Vino</label>
+                <label><input type="checkbox" name="bebida" value="Fernet">Fernet</label>
+                <label><input type="checkbox" name="bebida" value="Gin Tonic">Gin Tonic</label>
+                <label><input type="checkbox" name="bebida" value="Mojito">Mojito</label>
+                <label><input type="checkbox" name="bebida" value="Ron">Ron</label>
+                <label><input type="checkbox" name="bebida" value="Whisky">Whisky</label>
+                <label><input type="checkbox" name="bebida" value="Té Helado">Té Helado</label>
+                <label><input type="checkbox" name="bebida" value="Jugo de Frutas">Jugo de Frutas</label>
+                <label><input type="checkbox" name="bebida" value="Agua">Agua</label>
+            </fieldset>
+            <label for="comida">Comida Favorita:</label>
+            <select id="comida" name="comida">
+                <option value="">Selecciona una opción</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Ensalada">Ensalada</option>
+                <option value="Asado">Asado</option>
+                <option value="Empanadas">Empanadas</option>
+                <option value="Tacos">Tacos</option>
+                <option value="Curry">Curry</option>
+                <option value="Ramen">Ramen</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
